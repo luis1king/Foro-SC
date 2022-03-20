@@ -1,0 +1,148 @@
+/* Examcard */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+p {
+  margin: 0;
+}
+
+.clip-contents {
+  overflow: hidden;
+}
+
+.flex-col-hstart-vstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-row-vcenter-hstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-col-hcenter-vcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-hcenter-vend {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.examcard {
+  display: flex;
+  flex: 1;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(230, 230, 234, 1);
+  width: 243.4px;
+  height: 250px;
+}
+
+.frame-2225 {
+  padding: 19px 23px;
+  box-sizing: border-box;
+  background-color: rgba(4, 15, 54, 1);
+  height: 110px;
+  width: 100%;
+}
+
+.cover {
+    position: relative;
+  padding: 13px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 57px;
+  background-color: rgba(40, 237, 178, 0.25);
+  width: 100%;
+  height: 45px;
+}
+
+.txt-023 {
+  font-size: 27px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.14px;
+  color: rgba(40, 237, 178, 1);
+  word-wrap: break-word;
+}
+
+.txt-151 {
+  font-size: 21px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  word-wrap: break-word;
+}
+
+.frame-2226 {
+  display: flex;
+  flex: 1;
+  position: relative;
+  padding: 23px;
+  box-sizing: border-box;
+  height: 140px;
+  width: 100%;
+}
+
+.carddetailitem {
+  position: absolute;
+  top: 116px;
+  left: 24px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  height: 20px;
+  width: fit-content;
+}
+
+.txt-236 {
+  position: absolute;
+  left: 10px;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: rgba(165, 168, 179, 1);
+  width: 84px;
+  height: 16px;
+  word-wrap: break-word;
+  margin-right: 5px;
+  bottom:0px;
+}
+
+.icon {
+  position: relative;
+  right: 75%;
+  width: 20px;
+  height: 100%;
+  bottom: 0px;
+}
+
+.textcourse {
+  display: flex;
+  flex: 1;
+  height: 48px;
+  width: 100%;
+}
+
+.txt-128 {
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.09px;
+  color: rgba(18, 22, 37, 1);
+  width: 196px;
+  word-wrap: break-word;
+  position: relative;
+  bottom:40px
+}
+

@@ -1,0 +1,58 @@
+.principalDiscusiones{
+    padding:10px;
+
+   
+}
+
+.cabeceroDiscusiones{
+        height: 259px;
+        width:1850px;
+        margin:20px;
+        display:flex;
+        flex-direction:column;
+        margin-bottom:100px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction:row;
+        
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        background-color:  #E6E6EA;
+        border-radius: 10px;
+        width: 113px;
+        height: 42px;
+        justify-content: center;
+    }
+
+    .discusionesSubHeader{
+        background-color: aqua;
+        width: 1672px;
+    }
+
+
+    /*DISCUSIONES---------------------------------*/
+
+
+    .discusionesBody{
+        width: 1850px;
+        height: 930px;
+        position: relative;
+        background-color: #ffe1e1;
+        bottom: 50px;
+        margin-left: 20px;
+        display: flex;
+        justify-content:center;
+    }
+
+.discusionesMain{
+width: 1592px;
+height: 850px;
+margin-top:40px;
+display: flex;
+flex-direction: column;
+}
