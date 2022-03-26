@@ -1,5 +1,7 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Avatar, Box, Button, Flex, Text, Textarea } from '@chakra-ui/react'
+import { Accordion, AccordionButton, AccordionItem, AccordionPanel, Avatar, Box, Button, Flex, Text, Textarea } from '@chakra-ui/react'
 import React from 'react'
+
+
 
 export const EscribirRespuesta = () => {
   return (
