@@ -1,6 +1,7 @@
 import { Badge, Flex as Container, Flex, Text, Spacer, Button } from '@chakra-ui/react'
 import React from 'react'
 
+
 export const PreguntaCard = () => {
   return (
     <Container direction='column' w='100%' borderRadius='12px' padding='24px 12px' gap='24px'>

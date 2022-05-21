@@ -161,7 +161,6 @@ export const Temas = () => {
               <Examcard />
               <Examcard />
               <Examcard />
-              <Examcard />
 
             </div>
 

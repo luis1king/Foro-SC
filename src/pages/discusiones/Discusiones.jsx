@@ -1,4 +1,4 @@
-import { Avatar, Box, Container, Flex , Flex as HStack, Image, Spacer, Text } from '@chakra-ui/react'
+import { Box , Flex as HStack, Image, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
 import DiscusionHeader from '../../components/DiscusionHeader'
 import { Entradas } from '../../components/Entradas'

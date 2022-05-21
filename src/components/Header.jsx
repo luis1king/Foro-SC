@@ -1,14 +1,14 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
-import { Avatar, Box, HStack, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Text, useColorModeValue, VStack } from '@chakra-ui/react';
+import { Avatar, Box, Button, HStack, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { startLogout } from '../actions/authAction';
 
 const Header = () => {
 
-    
-    let navigate = useNavigate();
+    const dispatch = useDispatch()
     const handleLogout = () => {
-      navigate('/login');
+      dispatch(startLogout())
     }
 
     return (
@@ -43,9 +43,9 @@ const Header = () => {
                   <MenuList
                     bg={useColorModeValue('white', 'gray.900')}
                     borderColor={useColorModeValue('gray.200', 'gray.700')}>
-                    <MenuItem spacing='24px'> <i className="bi bi-gear"></i> <p>Configuración</p> </MenuItem>
+                    <Button as='MenuItem' spacing='24px' leftIcon={<i className="bi bi-gear"></i>}>  <p>Configuración</p> </Button>
                     <MenuDivider />
-                    <MenuItem onClick={handleLogout}> <i className="bi bi-box-arrow-left"></i> <span className="spanLogout">Cerrar Sesión</span></MenuItem>
+                    <Button as='MenuItem' onClick={handleLogout} leftIcon={<i className="bi bi-box-arrow-left"></i> }> Cerrar Sesión</Button>
                   </MenuList>
                 </Menu>
             </div>

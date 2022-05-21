@@ -1,24 +1,35 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Login } from '../pages/auth/Login'
-import { Register } from '../pages/auth/Register'
-import { Discusiones } from '../pages/discusiones/Discusiones'
-import { NuevaPregunta } from '../pages/nuevaPregunta/NuevaPregunta'
-import { Pregunta } from '../pages/pregunta/Pregunta'
-import { Temas } from '../pages/temas/Temas'
+import { useDispatch, useSelector } from 'react-redux'
+import { PrivateRoute } from '../routes/PrivateRoute'
+import { AuthRouter } from '../routes/AuthRouter'
+import { DashboardRoutes } from '../routes/DashboardRoutes'
+import { PublicoRoute } from '../routes/PublicoRoute'
+
 
 export const AppRouter = () => {
+// Comprobacion si el user esta logueado
+const dispatch = useDispatch()
+// Comprobamos el estado del cheking y el uid
+//const {uid} = useSelector(state => state.auth);
+const uid = localStorage.getItem('uid')
+console.log(uid)
   return (
-    <BrowserRouter> 
+    <BrowserRouter>
     <Routes>
-     
-     <Route path="/login" element={<Login />}/>
-     <Route path="/register" element={<Register/>}/>
-     <Route path="/*" element={<Temas />} />
-     <Route path="/discusiones" element={<Discusiones />} />
-     <Route path="/nuevapregunta" element={<NuevaPregunta/>} />
-     <Route path="/pregunta" element={<Pregunta />} />
-
+      {/* La !! sirve para convertir un string a un valor booleano */}
+      <Route exact path="/auth/*" element={
+      <PublicoRoute uid={!!uid}>
+       <AuthRouter />
+      </PublicoRoute>}>
+      </Route>
+      
+      {/* Private routes */}
+       <Route path="/*" element={
+       <PrivateRoute uid={!!uid}>
+        <DashboardRoutes/>
+       </PrivateRoute>}>
+       </Route>
     </Routes>
     </BrowserRouter>
   )
